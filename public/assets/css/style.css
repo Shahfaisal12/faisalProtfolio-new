@@ -2152,12 +2152,12 @@ hr {
 
 .footer {
 	margin: 0;
-	padding: 60px 0;
+	padding: 30px 0;
 	border-top: 1px solid rgba(0,0,0,0.1);
 }
 
 .footer.footer-default {
-	padding: 60px 0;
+	padding: 30px 0;
 }
 
 .footer .copyright-text, .footer .footer-heading {
@@ -2490,7 +2490,7 @@ hr {
 }
 
 .section.hero-started .content {
-	padding-top: 40px;
+	padding-top: 90px;
 	position: relative;
 }
 

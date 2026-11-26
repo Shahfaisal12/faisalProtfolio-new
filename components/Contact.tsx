@@ -55,7 +55,7 @@ export function Contact() {
                     <span> Availability </span>
                   </div>
                   <div className="lui-text">
-                    <span> Open to conversations </span>
+                    <span> {profile.availability} </span>
                   </div>
                 </div>
                 <div className="numbers-item scrolla-element-anim-1 scroll-animate animate__active" data-animate="active">

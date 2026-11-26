@@ -9,12 +9,12 @@ export function Hero() {
           <div className="section hero-started">
             <div className="content scrolla-element-anim-1 scroll-animate animate__active" data-animate="active">
               <div className="titles">
-                <div className="lui-subtitle">
+                <div className="lui-subtitle hero-greeting">
                   <span>
                     Hello, <b>my name is</b>
                   </span>
                 </div>
-                <h1 className="title scroll-animate animate__active" data-animate="active">
+                <h1 className="title hero-name scroll-animate animate__active" data-animate="active">
                   <span>
                     <b>{profile.firstName}</b> {profile.lastName}
                   </span>
@@ -26,24 +26,47 @@ export function Hero() {
                   <span>{profile.specialty}</span>
                 </div>
               </div>
+              <div className="slide scrolla-element-anim-1 scroll-animate animate__active" data-animate="active">
+                <img decoding="async" src="/assets/images/profile2.png?v=leap" alt="Portrait of Shah Faisal, Full-Stack Software Engineer" />
+                <span className="circle circle-1"></span>
+                <span className="circle img-1" style={{ backgroundImage: "url(/assets/images/pat-1.png)" }}></span>
+                <span className="circle img-2" style={{ backgroundImage: "url(/assets/images/pat-2.png)" }}></span>
+                <span className="circle img-3" style={{ backgroundImage: "url(/assets/images/pat-2.png)" }}></span>
+                <div className="info-list">
+                  <ul>
+                    <li>
+                      <span className="num">{profile.years}</span>
+                      <span className="value">
+                        Years of <strong>Experience</strong>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="num">{profile.projects}</span>
+                      <span className="value">
+                        Enterprise <strong>Projects</strong>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div className="description">
                 <div>
                   <p>{profile.summary}</p>
                 </div>
                 <div className="social-links">
-                  <a target="_blank" rel="noopener" href={profile.linkedin}>
+                  <a target="_blank" rel="noopener noreferrer" href={profile.linkedin} aria-label="LinkedIn profile">
                     <i aria-hidden="true" className="fab fa-linkedin-in"></i>
                   </a>
-                  <a target="_blank" rel="noopener" href={profile.github}>
+                  <a target="_blank" rel="noopener noreferrer" href={profile.github} aria-label="GitHub profile">
                     <i aria-hidden="true" className="fab fa-github"></i>
                   </a>
-                  <a target="_blank" rel="noopener" href={profile.website}>
+                  <a target="_blank" rel="noopener noreferrer" href={profile.website} aria-label="Portfolio website">
                     <i aria-hidden="true" className="fas fa-globe"></i>
                   </a>
                 </div>
               </div>
               <div className="bts">
-                <a target="_blank" rel="noopener" href={profile.cv} className="btn">
+                <a target="_blank" rel="noopener noreferrer" href={profile.cv} className="btn">
                   <span>Download CV</span>
                 </a>
                 <Link href="/#skills-section" className="btn-lnk">
@@ -51,37 +74,12 @@ export function Hero() {
                 </Link>
               </div>
             </div>
-            <div className="slide scrolla-element-anim-1 scroll-animate animate__active" data-animate="active">
-              <img decoding="async" src="/assets/images/profile2.png?v=leap" alt="Shah Faisal" />
-              <span className="circle circle-1"></span>
-              <span className="circle img-1" style={{ backgroundImage: "url(/assets/images/pat-1.png)" }}></span>
-              <span className="circle img-2" style={{ backgroundImage: "url(/assets/images/pat-2.png)" }}></span>
-              <span className="circle img-3" style={{ backgroundImage: "url(/assets/images/pat-2.png)" }}></span>
-              <div className="info-list">
-                <ul>
-                  <li>
-                    <span className="num">
-                      {profile.years} <strong>+</strong>
-                    </span>
-                    <span className="value">
-                      Years of <strong>Experience</strong>
-                    </span>
-                  </li>
-                  <li>
-                    <span className="num">{profile.projects}</span>
-                    <span className="value">
-                      Enterprise <strong>Projects</strong>
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
             <div className="v-line-block">
               <span></span>
             </div>
           </div>
           <div className="lui-bgtitle">
-            <span> Full Stack Developer </span>
+            <span> Full-Stack Software Engineer </span>
           </div>
         </div>
       </div>

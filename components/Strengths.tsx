@@ -2,15 +2,15 @@
 
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { QuoteIcon, SectionHeading } from "@/components/SectionHeading";
+import { SectionHeading } from "@/components/SectionHeading";
 import { strengths } from "@/lib/data";
 import "swiper/css";
 import "swiper/css/pagination";
 
 export function Strengths() {
   return (
-    <section className="lui-section lui-gradient-center" id="testimonials-section">
-      <SectionHeading title="Testimonials" subtitle="what" highlight="Clients Say" />
+    <section className="lui-section lui-gradient-center" id="highlights-section">
+      <SectionHeading title="Professional Highlights" subtitle="what" highlight="I Bring" />
       <div className="v-line v-line-right">
         <div className="container">
           <Swiper
@@ -29,12 +29,6 @@ export function Strengths() {
             {strengths.map((item) => (
               <SwiperSlide key={item.name}>
                 <div className="testimonials-item">
-                  <div className="image">
-                    <img decoding="async" src={item.image} alt={item.name} />
-                    <div className="icon">
-                      <QuoteIcon />
-                    </div>
-                  </div>
                   <div className="text lui-text">
                     <div>
                       <p>{item.text}</p>
@@ -54,7 +48,7 @@ export function Strengths() {
             ))}
           </Swiper>
           <div className="lui-bgtitle">
-            <span> Testimonials </span>
+            <span> Highlights </span>
           </div>
           <div className="v-line-block">
             <span></span>

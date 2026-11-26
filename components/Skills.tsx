@@ -14,7 +14,7 @@ export function Skills() {
               <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4" key={index}>
                 <div className="skills-items">
                   {column.map((skill) => (
-                    <div className="skills-item scrolla-element-anim-1 scroll-animate animate__active" data-animate="active" key={skill.name}>
+                    <div className="skills-item skill-category scrolla-element-anim-1 scroll-animate animate__active" data-animate="active" key={skill.name}>
                       <h6 className="name">
                         <span> {skill.name} </span>
                       </h6>
@@ -22,16 +22,6 @@ export function Skills() {
                         <div>
                           <p>{skill.text}</p>
                         </div>
-                      </div>
-                      <div className="dots">
-                        <div className="dot" style={{ width: `${skill.value}%` }}>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div className="value">
-                        <span className="num">
-                          {skill.value} <span>%</span>
-                        </span>
                       </div>
                     </div>
                   ))}

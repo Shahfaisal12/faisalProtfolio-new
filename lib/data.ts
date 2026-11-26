@@ -1,30 +1,31 @@
 export const profile = {
   firstName: "Shah",
   lastName: "Faisal",
-  title: "Full Stack Developer",
-  specialty: "React • Next.js • TypeScript • .NET",
+  title: "Full-Stack Software Engineer",
+  specialty: ".NET • C# • ASP.NET • React • Next.js • TypeScript",
   summary:
-    "I’m a Full Stack Developer with 5+ years of experience building scalable, high-performance web applications and enterprise solutions. I specialize in React, Next.js, TypeScript, .NET, REST APIs, and modern web development. I enjoy solving complex problems, building clean and maintainable solutions, and delivering secure, reliable, and user-focused digital products.",
+    "Full-Stack Software Engineer with 6 years of experience building secure enterprise web applications. Currently with Tata Consultancy Services, deployed at the Public Investment Fund in Riyadh. Experienced in .NET, C#, ASP.NET, React, Next.js, TypeScript, REST APIs, Arabic/English RTL, and CI/CD.",
   location: "Al Olaya, Riyadh, Saudi Arabia",
   email: "faisalmkd02@gmail.com",
-  phone: "+966 502639688",
+  phone: "+966 50 263 9688",
   phoneHref: "+966502639688",
   linkedin: "https://www.linkedin.com/in/shahfaisal8012",
   github: "https://github.com/Shahfaisal12",
   website: "https://faisal-portfolio-app.vercel.app/",
   cv: "/assets/Shah_Faisal_CV.pdf",
-  years: "5",
-  projects: "6+"
+  availability: "Immediate availability · Transferable Iqama",
+  years: "6",
+  projects: "5+"
 };
 
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/#services-section" },
-  { label: "Skills", href: "/#skills-section" },
-  { label: "Works", href: "/#works-section" },
-  { label: "Resume", href: "/#resume-section" },
-  { label: "Testimonials", href: "/#testimonials-section" },
-  { label: "Stack", href: "/#pricing-section" },
+  { label: "Technical Skills", href: "/#skills-section" },
+  { label: "Projects", href: "/#works-section" },
+  { label: "Experience & Education", href: "/#resume-section" },
+  { label: "Professional Highlights", href: "/#highlights-section" },
+  { label: "Tools & Platforms", href: "/#pricing-section" },
   { label: "Expertise", href: "/#blog-section" },
   { label: "Contact", href: "/#contact-section" }
 ];
@@ -33,7 +34,7 @@ export const services = [
   {
     subtitle: "User Interfaces",
     title: "Frontend Developer",
-    text: "Crafting seamless, high-performance user interfaces with React.js, Next.js, and TypeScript. Passionate about delivering engaging and scalable web experiences.",
+    text: "Build responsive, accessible enterprise interfaces with React 18, Next.js, TypeScript, Tailwind CSS, shadcn/ui, and Material UI.",
     href: "/#works-section",
     link: "See Projects",
     icon: "/assets/images/service-web.png"
@@ -41,7 +42,7 @@ export const services = [
   {
     subtitle: "APIs & Data",
     title: "Backend Developer",
-    text: "Building secure, efficient, and scalable backend solutions with modern technologies. Focused on optimizing performance and ensuring seamless data flow.",
+    text: "Develop and integrate RESTful APIs, business workflows, authentication, and role-based access using .NET, C#, ASP.NET, Node.js, and Express.js.",
     href: "/#resume-section",
     link: "See Experience",
     icon: "/assets/images/service-backend.png"
@@ -49,18 +50,56 @@ export const services = [
 ];
 
 export const skills = [
-  { name: "JavaScript", text: "Core language for interactive, high-performance web applications.", value: 95 },
-  { name: "React JS", text: "Building reusable component libraries, SPAs, and scalable product UIs.", value: 95 },
-  { name: "Next JS", text: "SSR/SSG pipelines, SEO, routing, and production Next.js platforms.", value: 92 },
-  { name: "TypeScript", text: "Typed, maintainable codebases for production frontend systems.", value: 90 },
-  { name: "Redux Toolkit", text: "Predictable state management for data-driven React applications.", value: 90 },
-  { name: "Tailwind CSS", text: "Responsive, accessible interfaces with utility-first styling.", value: 88 },
-  { name: "Node JS", text: "Backend services, APIs, and tooling around the JavaScript stack.", value: 82 },
-  { name: ".NET", text: "Backend services, APIs, business logic, and enterprise application development.", value: 85 },
-  { name: "Git", text: "Version control, branching, reviews, and production deployments.", value: 92 }
+  {
+    name: "Backend",
+    text: "C#, .NET, ASP.NET, Node.js, Express.js, RESTful APIs, third-party integrations, headless content integration"
+  },
+  {
+    name: "Frontend",
+    text: "React 18, Next.js 15, TypeScript, JavaScript (ES6+), Redux Toolkit, RTK Query, DevExtreme, shadcn/ui"
+  },
+  {
+    name: "UI & Styling",
+    text: "Tailwind CSS, Material UI, Bootstrap, HTML5, CSS3, responsive UI, component libraries, design systems"
+  },
+  {
+    name: "Architecture & Quality",
+    text: "Arabic/English i18n, RTL support, SSR/SSG, SEO, accessibility, role-based access, performance optimization"
+  },
+  {
+    name: "Data & Visualization",
+    text: "Chart.js, Highcharts, DevExtreme Charts, D3.js (working knowledge), PDF, Excel, and CSV export"
+  },
+  {
+    name: "Cloud & Delivery",
+    text: "Azure, Azure DevOps, Docker, CI/CD pipelines, Git, GitHub, Bitbucket, Vercel, Netlify, Firebase"
+  },
+  {
+    name: "Database & AI Tools",
+    text: "MySQL; Claude and Cursor for AI-assisted coding, code review, debugging, and documentation"
+  },
+  {
+    name: "Core Strengths",
+    text: "Full-stack development, enterprise web applications, REST API development and integration, secure authentication"
+  },
+  {
+    name: "Ways of Working",
+    text: "Agile/Scrum, code reviews, cross-functional collaboration, team mentoring"
+  }
 ];
 
 export const works = [
+  {
+    title: "TCS at PIF | Enterprise Applications",
+    category: "TCS · Public Investment Fund · Riyadh",
+    filters: ["enterprise"],
+    image: "/assets/images/tcs-pif-case.svg",
+    href: "/#resume-section",
+    external: false,
+    linkLabel: "See experience",
+    text: "Currently deployed by Tata Consultancy Services at the Public Investment Fund, building and supporting secure enterprise applications, dashboards, and API-powered workflows for internal teams.",
+    tags: [".NET", "C#", "React", "Next.js", "TypeScript", "REST APIs", "Role-based access"]
+  },
   {
     title: "Content Catalyst",
     category: "React · Next.js · TypeScript",
@@ -69,7 +108,7 @@ export const works = [
     href: "https://contentcatalyst.com",
     external: true,
     linkLabel: "Visit site",
-    text: "Worked as a Frontend Developer on the UK-based project Content Catalyst, building the UI and integrating .NET Core APIs. Developed full functionality for summarizing articles and extracting content from PDFs, PPT, Word files, and images.",
+    text: "Built the frontend for an AI research platform that ingests PDF, PowerPoint, and Word documents and provides chat-based AI summaries. Deployed with Docker and Azure DevOps.",
     tags: ["React", "Next.js", "TypeScript", "Redux Toolkit", "MUI", "Git", "Azure", "DevOps", "Docker"]
   },
   {
@@ -80,19 +119,19 @@ export const works = [
     href: "https://www.flyingcolour.net/",
     external: true,
     linkLabel: "Visit site",
-    text: "As a remote ReactJS developer for a Dubai-based company, I developed and maintained their website using ReactJS and related technologies. I collaborated closely with design and backend teams and utilized Git for version control and code deployment.",
-    tags: ["ReactJS", "Context API", "AG Grid Table", "Git"]
+    text: "Built frontend features and admin modules for enterprise software, collaborating with global teams on React interfaces and API-based workflows.",
+    tags: ["React", "API integration", "Enterprise software"]
   },
   {
     title: "Collaboration Yard",
-    category: "Angular · Uselooper",
+    category: "Virtual Classroom",
     filters: ["product"],
     image: "/assets/images/collaborationyard.png",
     href: "https://collaborationyard.com",
     external: true,
     linkLabel: "Visit site",
-    text: "Worked remotely as a UI/UX Developer on Collaboration Yard, a virtual classroom product for online teaching sessions with modern educational features. Built the interface with HTML, CSS, JavaScript, and related tools.",
-    tags: ["Angular", "Uselooper", "Bitbucket"]
+    text: "Built responsive React frontends and interactive workflows for a virtual classroom platform, translating Figma designs into production interfaces.",
+    tags: ["React", "HTML", "CSS", "JavaScript"]
   },
   {
     title: "EPR (Job Portal)",
@@ -102,8 +141,8 @@ export const works = [
     href: "https://epr.org.pk/",
     external: true,
     linkLabel: "Visit site",
-    text: "Developed a job portal for employers to post openings and applicants to search and apply. Includes user authentication, job recommendations, and notifications, built with ReactJS, Node.js, PHP, and MySQL.",
-    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL", "cPanel"]
+    text: "Developed UI components for government job portals and employment processing workflows.",
+    tags: ["React", "Employment workflows", "Government portals"]
   },
   {
     title: "OneHubPlace",
@@ -113,20 +152,9 @@ export const works = [
     href: "https://onehubplace-app.azurewebsites.net",
     external: true,
     linkLabel: "Visit site",
-    text: "HR management system based on three web portals for personal details, holidays, and task management.",
+    text: "HR management system with personnel, holiday, and task management portals.",
     tags: ["React", "Next.js", "TypeScript", "Redux Toolkit", "MUI", "Git", "Azure", "DevOps", "Docker"]
   },
-  {
-    title: "PIF Cycle, Together, PartnerHub",
-    category: "Enterprise, PIF",
-    filters: ["enterprise"],
-    image: "/assets/images/work4.jpeg",
-    href: "/#resume-section",
-    external: false,
-    linkLabel: "See experience",
-    text: "Contributed to responsive UI, API integration, and performance across multiple Public Investment Fund platforms while working with cross-functional teams.",
-    tags: ["React", "Next.js", "TypeScript"]
-  }
 ];
 
 export const education = [
@@ -138,110 +166,118 @@ export const education = [
   }
 ];
 
+export const certifications = [
+  {
+    title: "Agile Foundations",
+    place: "Project Management Institute",
+    date: "Aug 2026",
+    text: ""
+  },
+  {
+    title: "Micro Front-End Architecture with React",
+    place: "LinkedIn Learning",
+    date: "Oct 2025",
+    text: ""
+  },
+  {
+    title: "Express Essentials: Build Powerful Web Apps with Node.js",
+    place: "LinkedIn Learning",
+    date: "Oct 2025",
+    text: ""
+  },
+  {
+    title: "Node.js Essential Training",
+    place: "LinkedIn Learning",
+    date: "Oct 2025",
+    text: ""
+  }
+];
+
 export const experience = [
   {
-    title: "Full Stack Developer",
+    title: "Software Engineer",
     place: "TCS | PIF · Riyadh, Saudi Arabia",
     date: "Feb 2026 – Present",
     present: true,
-    text: "Develop and maintain scalable enterprise applications using React, Next.js, TypeScript, and .NET.",
+    text: "Develop and maintain enterprise full-stack applications at the Public Investment Fund as part of Tata Consultancy Services’ enterprise application development team.",
     points: [
-      "Develop and maintain scalable enterprise applications using React, Next.js, TypeScript, and .NET.",
-      "Build frontend features and backend services across the full application development lifecycle.",
-      "Develop and integrate RESTful APIs to support complex business workflows and enterprise processes.",
-      "Implement backend business logic, API endpoints, authentication, authorization, and role-based access control.",
-      "Build responsive, accessible, and high-performance user interfaces using modern frontend technologies.",
-      "Develop dashboards, reporting features, workflow management, and data-driven enterprise solutions.",
-      "Implement Arabic/English internationalization and RTL support for enterprise applications.",
-      "Collaborate with backend developers, designers, QA engineers, and business stakeholders in an Agile/Scrum environment.",
-      "Analyze business requirements and BRDs, translate them into technical solutions, and deliver production-ready features.",
-      "Troubleshoot issues, optimize application performance, and maintain clean, reusable, and scalable code."
+      "Build and maintain enterprise applications with .NET, React, Next.js, and TypeScript.",
+      "Develop and integrate RESTful APIs and manage real-time data flows for business workflows.",
+      "Create secure dashboards, authentication mechanisms, and role-based access control.",
+      "Use Next.js server-side rendering and static generation to improve performance and SEO.",
+      "Provide production support, UI enhancements, and internal process improvements.",
+      "Contribute to code reviews, architecture practices, and Agile cross-functional delivery."
     ]
   },
   {
     title: "Senior Frontend Developer",
-    place: "BITS · Riyadh, Saudi Arabia",
-    date: "Aug 2023 – Feb 2026",
-    text: "Architected and maintained enterprise web applications using React 18, Next.js, and TypeScript.",
+    place: "BITS | Binary Integrated Technology Solutions · Riyadh, Saudi Arabia",
+    date: "May 2025 – Jan 2026",
+    text: "Architected and maintained a React 18 and Next.js enterprise platform used across multiple business modules.",
     points: [
-      "Architected and maintained enterprise web applications using React 18, Next.js, and TypeScript.",
-      "Developed scalable, reusable, and responsive UI components using Tailwind CSS, shadcn/ui, and modern frontend architecture.",
-      "Built data-driven dashboards, KPIs, charts, reports, search workflows, and business applications using DevExtreme and custom components.",
-      "Implemented Arabic/English internationalization, RTL support, locale-aware date/time formatting, and dynamic content loading.",
-      "Integrated RESTful APIs and implemented complex business workflows and data-driven features.",
-      "Improved application performance, accessibility, responsiveness, and cross-browser compatibility.",
-      "Contributed to frontend architecture, coding standards, reusable component libraries, and design-system development.",
-      "Collaborated with cross-functional teams in an Agile/Scrum environment to deliver reliable and maintainable enterprise solutions."
+      "Implemented Arabic/English internationalization, full RTL support, locale-aware date/time formatting, and dynamic content loading.",
+      "Built dashboards, charts, KPIs, reports, PDF/Excel exports, and global search using DevExtreme and custom components.",
+      "Contributed to architecture, coding standards, a design system, and reusable shadcn/ui and Tailwind CSS components.",
+      "Maintained performance budgets, accessibility, and cross-browser stability."
     ]
   },
   {
     title: "Software Engineer",
-    place: "Codehub Systems",
-    date: "Aug 2023 – Present",
-    present: true,
-    text: "Developed scalable front-end solutions using React.js, Next.js, and TypeScript.",
+    place: "Code Hub Systems · UK-based company",
+    date: "Aug 2023 – Apr 2025",
+    text: "Built high-performance frontends and integrated complex APIs for a UK-based software company.",
     points: [
-      "Developed scalable front-end solutions using React.js, Next.js, and TypeScript.",
-      "Translated Figma designs into responsive, pixel-perfect React applications.",
-      "Collaborated with backend teams to integrate RESTful APIs efficiently.",
-      "Participated in daily standups, sprint planning, and code reviews to ensure smooth development."
+      "Built applications with React, Next.js SSR/SSG, and TypeScript; optimized server rendering for SEO and load times.",
+      "Integrated RESTful APIs and worked with backend teams on API design.",
+      "Implemented secure token flows, CSRF protection, and session handling.",
+      "Deployed with Docker and Azure DevOps CI/CD; contributed to Agile ceremonies."
     ]
   },
   {
     title: "Frontend Developer (ReactJS)",
-    place: "Relymer Group",
-    date: "August 2022 – Present",
-    present: true,
-    text: "Developed and maintained web applications using ReactJS, Next.js, animations, and Material UI.",
+    place: "Relymer Group · Islamabad, Pakistan",
+    date: "Aug 2022 – Aug 2023",
+    text: "Modernized legacy applications into reusable React components and responsive user interfaces.",
     points: [
-      "Developed and maintained web applications using ReactJS, Next.js, animations, and Material UI.",
-      "Implemented enhancements that improved web functionality, responsiveness, and Firebase connectivity.",
-      "Collaborated with the design team to ensure seamless integration of features and user interfaces."
+      "Built responsive UIs with Tailwind CSS and Material UI and integrated third-party APIs and Firebase.",
+      "Developed and deployed smart contracts and integrated blockchain features."
     ]
   },
   {
     title: "Frontend Developer (ReactJS)",
-    place: "Flying Colour",
+    place: "Flyingcolour Business Setup Services · Dubai, UAE (Remote)",
     date: "Feb 2022 – Aug 2022",
-    text: "Developed and maintained the company website using ReactJS and related technologies.",
+    text: "Debugged and optimized frontend performance for enterprise software.",
     points: [
-      "Developed and maintained the company's website using ReactJS and other related technologies.",
-      "Collaborated with the design and backend teams to ensure seamless integration of features.",
-      "Utilized Git for version control and deployed code to the production environment.",
-      "Worked with ReactJS, AG Grid Table, Git, and Bitbucket."
+      "Built React features and admin modules using API-based workflows in collaboration with global teams."
     ]
   },
   {
-    title: "Frontend Developer",
-    place: "Collaboration Yard",
-    date: "August 2021 – Feb 2022",
-    text: "UI/UX developer on virtual classroom software for online teaching sessions.",
+    title: "UX/UI Developer",
+    place: "Collaboration Yard · Karachi, Pakistan (Remote)",
+    date: "Mar 2021 – Feb 2022",
+    text: "Built responsive React interfaces and interactive workflows for a virtual classroom platform.",
     points: [
-      "Worked on a collaborative project as a UI/UX developer for virtual classroom software that lets you manage and run online teaching sessions.",
-      "Designed, developed, and maintained web applications using HTML, CSS, JavaScript, Bootstrap, and Uselooper.",
-      "Implemented responsive design and ensured cross-browser compatibility."
+      "Translated Figma designs into production UIs and maintained quality through code reviews."
     ]
   }
 ];
 
 export const strengths = [
   {
-    name: "Sara Lee",
-    role: "CFO, Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-    text: "I thought it was impossible to make a website as beautiful as our product, but Shah Faisal proved me wrong."
+    name: "Enterprise Full-Stack Development",
+    role: ".NET · C# · ASP.NET · React · Next.js",
+    text: "Six years building and supporting secure, scalable enterprise web applications, including platforms for the Public Investment Fund."
   },
   {
-    name: "Chris Brown",
-    role: "COO, DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-    text: "I've never met a web developer who truly cares about their clients' success like Shah Faisal does."
+    name: "Internationalization & RTL",
+    role: "Arabic/English · Accessibility · Responsive UI",
+    text: "Implemented Arabic and English localization with full right-to-left support, locale-aware date and time formatting, and dynamic content."
   },
   {
-    name: "Lisa Wang",
-    role: "CTO, 456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-    text: "After Shah Faisal optimized our website, our traffic increased by 50%. We can't thank him enough!"
+    name: "Secure API & Delivery Practices",
+    role: "REST APIs · RBAC · Docker · Azure DevOps",
+    text: "Experienced with API integration, authentication, role-based access control, secure token flows, CSRF protection, and CI/CD."
   }
 ];
 
@@ -252,7 +288,7 @@ export const stack = [
     suffix: "/",
     em: "TS",
     text: "Core languages used to build and ship production web systems.",
-    items: ["JavaScript", "TypeScript", ".NET", "Node JS"],
+    items: ["C#", ".NET", "ASP.NET", "JavaScript", "TypeScript", "Node.js"],
     featured: false
   },
   {
@@ -261,7 +297,7 @@ export const stack = [
     suffix: "JS",
     em: "Next.js",
     text: "Libraries and UI systems used across products and dashboards.",
-    items: ["React JS", "Next JS", "Redux Toolkit", "Tailwind CSS"],
+    items: ["React 18", "Next.js 15", "Redux Toolkit", "RTK Query", "Tailwind CSS", "shadcn/ui"],
     featured: true
   },
   {
@@ -270,7 +306,7 @@ export const stack = [
     suffix: "/",
     em: "Cloud",
     text: "Version control and platforms used to ship and operate products.",
-    items: ["Git", "Azure", "Docker", "cPanel"],
+    items: ["Azure", "Azure DevOps", "Docker", "CI/CD", "Git"],
     featured: false
   }
 ];
@@ -278,26 +314,26 @@ export const stack = [
 export const expertise = [
   {
     category: "Architecture",
-    title: "AEM-style Headless Content",
+    title: "REST APIs & Headless Content",
     href: "/#resume-section",
     image: "/assets/images/single7.jpg",
-    text: "Strong expertise in AEM-style headless content integration, REST APIs, maps, and modular frontend architecture for enterprise platforms.",
+    text: "REST API design and integration, third-party services, headless content integration, and modular frontend architecture for enterprise applications.",
     link: "See experience"
   },
   {
     category: "Performance",
-    title: "SEO, SSR & Optimization",
+    title: "SSR, SSG, SEO & Performance",
     href: "/#skills-section",
     image: "/assets/images/blog-4-scaled-1.jpg",
-    text: "Performance optimization, SEO, Next.js SSR/SSG pipelines, accessibility compliance, and cross-browser stability for data-rich SPAs.",
+    text: "Next.js server-side rendering and static generation, SEO, accessibility, and performance optimization for enterprise platforms.",
     link: "See skills"
   },
   {
     category: "Delivery",
-    title: "CI/CD, Docker & Mentoring",
+    title: "CI/CD, Docker & Agile Delivery",
     href: "/#contact-section",
     image: "/assets/images/blog-2.jpg",
-    text: "CI/CD pipelines, Docker, Azure DevOps, project deployment, team mentoring, and Agile/Scrum delivery across multiple products.",
+    text: "Docker, Azure DevOps CI/CD pipelines, code reviews, team mentoring, and Agile/Scrum delivery across cross-functional teams.",
     link: "Contact me"
   },
   {

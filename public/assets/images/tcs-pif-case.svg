@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" fill="none">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101A24"/>
+      <stop offset="1" stop-color="#203A3C"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="94" y1="0" x2="661" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#42D3AE"/>
+      <stop offset="1" stop-color="#71B9D2"/>
+    </linearGradient>
+    <linearGradient id="chart" x1="739" y1="495" x2="1093" y2="405" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#29A587"/>
+      <stop offset="1" stop-color="#69C5B0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#fff" stroke-opacity=".035"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="720" fill="url(#background)"/>
+  <rect width="1200" height="720" fill="url(#grid)"/>
+  <circle cx="1067" cy="85" r="220" fill="#29A587" fill-opacity=".08"/>
+  <circle cx="95" cy="680" r="210" fill="#71B9D2" fill-opacity=".06"/>
+
+  <text x="88" y="139" fill="#8BA3AE" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">ENTERPRISE APPLICATIONS</text>
+  <rect x="88" y="170" width="520" height="2" rx="1" fill="url(#accent)"/>
+  <text x="88" y="279" fill="#fff" font-family="Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-2">TCS <tspan fill="#42D3AE">×</tspan> PIF</text>
+  <text x="91" y="328" fill="#D1DEE2" font-family="Arial, sans-serif" font-size="24">Enterprise technology in Riyadh</text>
+
+  <rect x="88" y="383" width="215" height="52" rx="8" fill="#fff" fill-opacity=".08" stroke="#fff" stroke-opacity=".14"/>
+  <text x="110" y="416" fill="#fff" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing=".4">TATA CONSULTANCY SERVICES</text>
+  <rect x="317" y="383" width="202" height="52" rx="8" fill="#fff" fill-opacity=".08" stroke="#fff" stroke-opacity=".14"/>
+  <text x="329" y="416" fill="#fff" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing=".3">PUBLIC INVESTMENT FUND</text>
+
+  <text x="90" y="506" fill="#AFC1C7" font-family="Arial, sans-serif" font-size="18">Secure platforms · dashboards · API workflows</text>
+  <rect x="88" y="548" width="66" height="5" rx="2.5" fill="#42D3AE"/>
+  <rect x="165" y="548" width="66" height="5" rx="2.5" fill="#71B9D2" fill-opacity=".7"/>
+  <rect x="242" y="548" width="66" height="5" rx="2.5" fill="#fff" fill-opacity=".25"/>
+
+  <rect x="675" y="104" width="449" height="500" rx="22" fill="#F8FBFA"/>
+  <rect x="675" y="104" width="449" height="60" rx="22" fill="#EDF3F1"/>
+  <path d="M675 142V164H1124V142" fill="#EDF3F1"/>
+  <circle cx="708" cy="134" r="6" fill="#F17667"/>
+  <circle cx="729" cy="134" r="6" fill="#E8B84D"/>
+  <circle cx="750" cy="134" r="6" fill="#52B98E"/>
+  <text x="704" y="203" fill="#20333A" font-family="Arial, sans-serif" font-size="20" font-weight="700">Enterprise Operations</text>
+  <text x="704" y="228" fill="#75868A" font-family="Arial, sans-serif" font-size="13">ILLUSTRATIVE DASHBOARD</text>
+
+  <rect x="704" y="252" width="185" height="91" rx="12" fill="#EAF4F1"/>
+  <text x="721" y="278" fill="#658079" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1">API INTEGRATION</text>
+  <text x="721" y="315" fill="#203A3C" font-family="Arial, sans-serif" font-size="20" font-weight="700">RESTful APIs</text>
+  <rect x="902" y="252" width="193" height="91" rx="12" fill="#EEF2F7"/>
+  <text x="919" y="278" fill="#6C7D8D" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1">SECURE ACCESS</text>
+  <text x="919" y="315" fill="#203A3C" font-family="Arial, sans-serif" font-size="20" font-weight="700">Role-based</text>
+
+  <text x="704" y="382" fill="#50646A" font-family="Arial, sans-serif" font-size="14" font-weight="700">Enterprise workflow overview</text>
+  <path d="M717 514H1086M717 477H1086M717 440H1086M717 403H1086" stroke="#DDE7E4" stroke-width="1"/>
+  <path d="M731 491L782 462L833 473L884 429L935 448L986 405L1037 423L1073 388" stroke="url(#chart)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="731" cy="491" r="6" fill="#29A587"/>
+  <circle cx="833" cy="473" r="6" fill="#29A587"/>
+  <circle cx="935" cy="448" r="6" fill="#29A587"/>
+  <circle cx="1037" cy="423" r="6" fill="#29A587"/>
+  <rect x="704" y="542" width="391" height="1" fill="#DDE7E4"/>
+  <text x="704" y="573" fill="#75868A" font-family="Arial, sans-serif" font-size="12" letter-spacing=".5">.NET · REACT · NEXT.JS · TYPESCRIPT</text>
+</svg>

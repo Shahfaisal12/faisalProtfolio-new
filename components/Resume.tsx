@@ -2,14 +2,14 @@
 
 import { useState } from "react";
 import { SectionHeading } from "@/components/SectionHeading";
-import { education, experience } from "@/lib/data";
+import { certifications, education, experience } from "@/lib/data";
 
 function HistoryList({
   title,
   items
 }: {
   title: string;
-  items: { title: string; place: string; date: string; text: string; present?: boolean; points?: string[] }[];
+  items: { title: string; place: string; date: string; text?: string; present?: boolean; points?: string[] }[];
 }) {
   const [open, setOpen] = useState(0);
 
@@ -52,7 +52,7 @@ function HistoryList({
                 </div>
                 <div className="text">
                   <div>
-                    <p>{item.text}</p>
+                    {item.text ? <p>{item.text}</p> : null}
                     {item.points?.length ? (
                       <ul>
                         {item.points.map((point) => (
@@ -80,6 +80,7 @@ export function Resume() {
           <div className="row">
             <HistoryList title="Education" items={education} />
             <HistoryList title="Experience" items={experience} />
+            <HistoryList title="Certifications" items={certifications} />
           </div>
           <div className="lui-bgtitle">
             <span> History </span>
